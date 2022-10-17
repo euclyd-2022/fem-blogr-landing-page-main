@@ -18,7 +18,10 @@
     --body-gradient-dark: hsl(237, 17%, 21%);
 }
 
-
+*{
+    margin:0;
+    padding:0;
+}
 
 /* font-family: 'Overpass', sans-serif; */
 
@@ -39,11 +42,16 @@ main{
 }
 
 .bg-top{
-    background-image: linear-gradient(var(--intro-gradient-light), var(--intro-gradient-dark));
+    background-image:url('./images/bg-pattern-intro-mobile.svg'), linear-gradient(var(--intro-gradient-light), var(--intro-gradient-dark));
+    background-position: left -250px top 0px;
+    background-size: cover;
     height: 90vh;
-    color: var(--white);
+    color: var(--white);,
     border-radius: 0 0 0 60px;
    
+    
+    
+    
 }
 
 
@@ -56,6 +64,7 @@ main{
 
 
 .navbar-brand {
+
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
@@ -155,6 +164,13 @@ background-image: url("./images/icon-close.svg")
     padding:7px 30px 7px;
 }
 
+#section-2 {
+    height:100vh;
+    display:flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width:576px) {
 
@@ -166,7 +182,9 @@ background-image: url("./images/icon-close.svg")
     }
 
     .bg-top{
-        background-image: linear-gradient(to right, var(--intro-gradient-light), var(--intro-gradient-dark));
+        background-image: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(to right, var(--intro-gradient-light), var(--intro-gradient-dark));
+        height: 60vh;
+        background-position: left 0px top -500px;
     }
 
     .navbar-collapse{
@@ -204,7 +222,7 @@ background-image: url("./images/icon-close.svg")
     }
     .signup {  
         color:inherit;
-        background-color: white;
+        background-color: var(--white);
         background-image:none;
         color: var(--light-red);
         position: absolute;
