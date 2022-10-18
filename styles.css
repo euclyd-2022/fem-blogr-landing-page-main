@@ -172,6 +172,44 @@ background-image: url("./images/icon-close.svg")
     align-items: center;
 }
 
+footer {
+    background: var(--very-dark-black-blue);
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    border-radius: 0 100px 0 0;
+
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    color: var(--grayish-blue);
+    padding:3em;
+    width: 60vw;
+    margin: auto;
+   
+
+}
+
+footer li {
+    list-style: none;
+    font-weight:400;
+}
+
+footer li.head {
+    font-weight:700;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+
+
+  .attribution{
+    color: var(--light-red)
+  }
+
 @media screen and (min-width:576px) {
 
     nav ul{
@@ -228,4 +266,8 @@ background-image: url("./images/icon-close.svg")
         position: absolute;
         right: 0px;
     }
+
+    .footer-flex {
+        
+        flex-direction: row;
 }
