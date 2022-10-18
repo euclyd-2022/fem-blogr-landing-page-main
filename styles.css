@@ -184,10 +184,12 @@ footer {
 .footer-flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
     color: var(--grayish-blue);
     padding:3em;
-    width: 60vw;
-    margin: auto;
+    
+   
    
 
 }
@@ -270,4 +272,16 @@ footer li.head {
     .footer-flex {
         
         flex-direction: row;
+        justify-content: space-around;
+        width: 80vw;
+        
+    }
+    
+    footer li.head {
+
+        font-weight:700;
+        color: #f5f5f5;
+        margin-bottom: 20px;
+        margin-top: 8px;
+}
 }
